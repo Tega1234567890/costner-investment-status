@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costner Groups - Investment Status</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            color: #4a148c;
+            margin-bottom: 10px;
+        }
+        .company {
+            color: #7b1fa2;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .summary {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            min-width: 180px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            color: #555;
+        }
+        .amount {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4a148c;
+        }
+        .progress-container {
+            background: #e0e0e0;
+            border-radius: 10px;
+            height: 30px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        .progress-bar {
+            background: linear-gradient(90deg, #4caf50, #8bc34a);
+            height: 100%;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .history {
+            text-align: left;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #4a148c;
+            color: white;
+        }
+        .note {
+            margin-top: 30px;
+            font-style: italic;
+            color: #666;
+        }
+        footer {
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Status</h1>
+        <div class="company">Costner Groups</div>
+        
+        <p>Dear Valued Investor,</p>
+        <p>Here is a summary of your investments with Costner Groups from inception.</p>
+        
+        <div class="summary">
+            <div class="card">
+                <h3>Total Commitment</h3>
+                <div class="amount">10,000</div>
+            </div>
+            <div class="card">
+                <h3>Amount Paid</h3>
+                <div class="amount" style="color: #4caf50;">3,000</div>
+            </div>
+            <div class="card">
+                <h3>Balance Remaining</h3>
+                <div class="amount" style="color: #f44336;">7,000</div>
+            </div>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">30% Paid</div>
+        </div>
+        
+        <div class="history">
+            <h2>Investment History</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>From Inception</td>
+                    <td>Initial Investment Payment</td>
+                    <td>3,000</td>
+                    <td>Paid</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Remaining Balance</td>
+                    <td>7,000</td>
+                    <td>Outstanding</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="note">
+            This page shows your current investment status. Contact Costner Groups for any updates or detailed statements.
+        </div>
+        
+        <footer>
+            &copy; Costner Groups. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
